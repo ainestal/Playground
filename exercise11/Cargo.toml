@@ -11,4 +11,7 @@ cargo-expand = "1.0.30"
 serde = "1.0.144"
 serde_derive = "1.0.144"
 serde_json = "1.0.85"
-json_typegen = "0.7.0"
+
+json_typegen = { path = "../json_typegen/json_typegen" }
+json_typegen_shared = { path = "../json_typegen/json_typegen_shared" }
+wraph = { path = "../json_typegen/wraph" }

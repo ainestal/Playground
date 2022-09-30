@@ -1,0 +1,12 @@
+[package]
+name = "exercise14"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+warp = "0.3.2"
+tokio = { version = "1.20.1", features = ["macros", "rt-multi-thread"] }
+futures = { version = "0.3.24", features = ["compat"] }
+futures-macro = "0.3.24"

@@ -1,0 +1,30 @@
+use serde_derive::Deserialize;
+use serde_derive::Serialize;
+
+#[derive(Default, Debug, Clone, PartialEq, Serialize, Deserialize)]
+pub struct Assets {
+    pub result: Result,
+    pub error: Vec<String>,
+}
+
+#[derive(Default, Debug, Clone, PartialEq, Serialize, Deserialize)]
+pub struct Result {
+    pub asset1: Asset1,
+    pub asset2: Asset2,
+}
+
+#[derive(Default, Debug, Clone, PartialEq, Serialize, Deserialize)]
+pub struct Asset1 {
+    pub aclass: String,
+    pub altname: String,
+    pub decimals: i64,
+    pub display_decimals: i64,
+}
+
+#[derive(Default, Debug, Clone, PartialEq, Serialize, Deserialize)]
+pub struct Asset2 {
+    pub aclass: String,
+    pub altname: String,
+    pub decimals: i64,
+    pub display_decimals: i64,
+}
